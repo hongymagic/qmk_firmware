@@ -7,8 +7,6 @@ BOOTLOADER = stm32-dfu
 # Build Options
 #   change yes to no to disable
 #
-BOOTMAGIC_ENABLE = yes      # Enable Bootmagic Lite
-MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
 CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
@@ -19,3 +17,13 @@ AUDIO_ENABLE = no           # Audio output
 ENCODER_ENABLE = yes
 RGB_MATRIX_ENABLE = yes
 RGB_MATRIX_DRIVER = AW20216
+
+# hongymagic customisation
+# https://caniusevia.com/docs/configuring_qmk
+VIA_ENABLE = yes            # Enable VIA
+BOOTMAGIC_ENABLE = lite     # Enable Bootmagic Lite
+MOUSEKEY_ENABLE = no        # Mouse keys
+LTO_ENABLE = yes            # Enable LTO
+RGB_MATRIX_SPLASH = yes
+RGB_MATRIX_KEYPRESSES = yes
+RGB_MATRIX_SOLID_REACTIVE_SIMPLE = yes
